@@ -6,18 +6,28 @@
     <title></title>
     <style>
         body {
-            height: 100vh; /* deixar a imagem 100% da viewport */
-            background-color: black; /*cor do fundo */
-            background-image: url(imagens/wallpaper002.jpg); /* imagem do fundo da tela*/
-            background-position: center center; /*centralizo o centro da imagem no centro da tela */
-            background-repeat:repeat-y/*imagem se repete por padrão, aqui eu tiro a repetição e deixo somente uma */
-            background-size: cover; /* cover ele cobre toda a tela, porem pode sacrificar o conteudo da imagem pra esticar ou diminuir.*/
-            
-            
+            /*height: 100vh; ( deixar a imagem 100% da viewport  )
+
+            background-color: black; (cor do fundo )
+
+            background-image: url(imagens/wallpaper002.jpg); (imagem do fundo da tela)
+
+            background-position: center center; (centralizo o centro da imagem no centro da tela )
+
+            background-repeat:no-repeat; (imagem se repete por padrão, aqui eu deixo ela sem repetir. )
+
+            background-size: cover; (cover ele cobre toda a tela, porem pode sacrificar o conteudo da imagem pra esticar ou diminuir.)
+
+            background-attachment: fixed; (plano de fundo muda de maneira que ele fica fixo em relação à janela de visualização, em vez de se mover junto com o conteúdo da página) 
+
+             shorthand - background : color > image > position > repeat > [size] > attachment
+            O size ainda não consigo usar como shorthand */
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat  fixed;
+            background-size: cover; /*como ele não entra na shorthand, declarei separado. */
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 600px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
