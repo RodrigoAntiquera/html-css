@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de fundo</title>
+    <style>
+        body {
+            background-image: url(imagens/wallpaper006.jpg);
+        }
+        div.quadrado {
+            display: inline-block; /* deixo os quadros como blocl porem na aparecencia fica inline, msm linha*/
+
+            border: 2px solid black; /*crio uma linha preta solida que sera a base do quadrado */
+            width: 300px; /* largura*/
+            height: 300px; /*altura . ao misturar largura e altura iguais crio um quadrado. */
+            border-radius: 10px; /* arredondar as bordas */
+            background-color:lightgray /*pinto fundo do quadrado de cinza */;
+        }
+
+        div#q1 {
+            background-color: skyblue;
+        } 
+        /*a '#'  significa 'ID' no css. ou seja, a ID q1 da div. Precisa ter criado a id no HTML  POSSO USAR ID DENTRO DE UMA CLASSE*/
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, yellow,red); /* feito degrade linear do topo ate a base 'to bottom' começando yello terminando orange*/
+        }
+        div#q3 {
+            background-image: url(imagens/pattern003.png);
+            /*pra criar imagem de fundo de tela uso esse caminho. */
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1" > 
+
+    </div >
+
+    <div class="quadrado" id="q2">
+
+    </div>
+
+    <div class="quadrado" id="q3">
+
+    </div>
+</body>
+</html>
