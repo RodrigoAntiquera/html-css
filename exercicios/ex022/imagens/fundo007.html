@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alinhamento vertical</title>
+    
+    <style>
+        #container { /* # chama a ID do html no CSS*/
+            background-image: url(target001.png);
+            background-size: 100% 100%;
+
+            position: relative; /*você pode movê-lo ligeiramente para cima, para baixo, para a esquerda ou para a direita com as propriedades top, bottom, left e right*/
+            height: 97vh;
+            padding: 10px;
+            background-color: purple;
+            
+            /* Em CSS, um container geralmente se refere a um elemento que agrupa outros elementos dentro de uma página web. Ele é usado para organizar e controlar o layout e o posicionamento de seus elementos filhos, facilitando a estruturação e estilização do conteúdo da página.*/
+            
+        }
+
+        #conteudo {
+            background-image: url(target001.png); /*imagem de fundo */
+            background-size: 100% 100%;
+
+            position: absolute; /* se baseia no elemento pai mais proximo com posição definida(relative exemplo) se não tiver pai posicionado, ficara no body ou canto superior esquerdo. Geralmente usado pra imagem sobreposta*/
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            
+
+            left: 50%; /* valor da esquerda ate a borda da imagem*/
+            top: 50%; /* do top ate embaixo 50% imagem*/
+
+            transform: translate(-50%, -50%); /*aqui eu mudei 50% pra esquerda e 50% pra cima. se fosse positivo seria pra direita e pra baixo, respectivamente. */
+
+        }
+    </style>
+
+</head>
+<body>
+    <section id="container"> 
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
