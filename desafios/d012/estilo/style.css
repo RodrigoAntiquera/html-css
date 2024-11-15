@@ -1,13 +1,26 @@
 @charset "UTF-8";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap'); /*importei o estilo do google fonts na aba import */
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+:root { /* -- é o simbolo da variavel no CSS e tem que ser declarada no root pra disponibilizar em todo o documento*/
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Passion One', 'cursive';
+    --fonte3:'Sriracha', 'cursive'
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100vh; /*tamanho máximo da viewport height(altura) */
-    background-color: darkgray;
+    background-color: rgb(22, 18, 18);
+    font-family: var(--fonte1);
 }
 
 header {
@@ -21,6 +34,8 @@ header > h1 {
     font-variant: small-caps; /*deixam todas maiusculas, porem com a fonte um pouco menor, mais driscreto */
 
     /*text-transform: uppercase; transforma tudo em letra maiuscula mas pode ficar exagerado*/
+    font-size:10vw; /*viewport width- 10% da largura total e se adapta ao espremer a tela*/
+    font-family: var(--fonte2);
 }
 
 header > p {
@@ -42,10 +57,12 @@ section.normal {
     background-color: white;
 }
 section {
-    padding-top: 10vh;
+    padding-top: 10vh; /* 10% do tamanho da viewport*/
     padding-bottom: 10vh;
     line-height: 2em; /* dobrei o espaçamento entre linha padrão*/
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size:3.5vw;
 }
 
 section.normal { /* section da classe normal*/
@@ -59,8 +76,9 @@ section.imagem {
 }
 
 section.imagem > p {
+    display: inline-block; /* transformei em inline pra ele englobar somente ate onde acaba a linha do verso*/
     background-color: rgba(0, 0, 0, 0.103);
-    width: 400px;
+    padding: 5px;
 }
 
 footer {
