@@ -3,15 +3,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap'); /*importei o estilo do google fonts na aba import */
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap'); /*importei o estilo do google fonts na aba import */
 
-:root { /* -- é o simbolo da variavel no CSS e tem que ser declarada no root pra disponibilizar em todo o documento*/
+:root { /* "-- "é o simbolo da variavel no CSS e tem que ser declarada no root pra disponibilizar em todo o documento*/
     --fonte1:Verdana, Geneva, Tahoma, sans-serif;
     --fonte2:'Passion One', 'cursive';
     --fonte3:'Sriracha', 'cursive'
 }
 
-* {
+* { /* O * são as configurações globais, vale pra todo o documento.*/
     margin: 0px;
     padding: 0px;
     font-size: 1em;
@@ -20,26 +20,26 @@
 html, body {
     min-height: 100vh; /*tamanho máximo da viewport height(altura) */
     background-color: rgb(22, 18, 18);
-    font-family: var(--fonte1);
+    font-family: var(--fonte1); /* uso var(--exemplo1) pra usar a variavel que criei no root.*/
 }
 
 header {
     background-color: black;
     color: white;
-    text-align: center;
+    text-align: center; /* centralizar texto inline level*/
 }
 
 header > h1 {
     padding-top:50px;
     font-variant: small-caps; /*deixam todas maiusculas, porem com a fonte um pouco menor, mais driscreto */
 
-    /*text-transform: uppercase; transforma tudo em letra maiuscula mas pode ficar exagerado*/
+    /*text-transform: uppercase; transforma tudo em letra maiuscula mas pode ficar exagerado dependendo do contexto*/
     font-size:10vw; /*viewport width- 10% da largura total e se adapta ao espremer a tela*/
     font-family: var(--fonte2);
 }
 
 header > p {
-    padding-bottom:50px;
+    padding-bottom:50px; 
 }
 
 header a, footer a {
@@ -49,11 +49,11 @@ header a, footer a {
 
 }
 
-header a:hover, footer a:hover {
-    text-decoration: underline;
+header a:hover, footer a:hover { /*pseudoclasse (:) hover(efeito ao passar o mouse em cima) no header e footer */
+    text-decoration: underline; /* enfeito o texto */
 }
 
-section.normal {
+section.normal { /* na section de classe normal*/
     background-color: white;
 }
 section {
