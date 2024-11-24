@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        html {
+            font-size: 14px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vh;
+            height: 400px;
+            border: 2px solid black;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas debitis esse ad pariatur consectetur deserunt aspernatur soluta, deleniti nam dolores similique, saepe tempore culpa explicabo facilis quae quo magni.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, dolor? Repudiandae vel sequi aperiam mollitia exercitationem quas, tempore quidem fuga magni odio impedit voluptate voluptatum autem? Harum nihil quibusdam eaque.</p>
+    <iframe  id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1> <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, exercitationem ullam quia consequatur sit soluta cum culpa rerum pariatur temporibus laborum a nam?</p> <img src='imagens/cursoemvideo.png'>"> 
+        <!--O name é usado como um id para dentro da ancora/target eu "puxar" ele pra tag e utilizar.Colo dentro de name o nome que eu quiser-->
+        <!--O srcdoc é um source que pode usar elementos html dentro, então consigo criar parágrafos, imagens etc. No caso de imagem será usado aspas simples ''-->
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, exercitationem ullam quia consequatur sit soluta cum culpa rerum pariatur temporibus laborum a nam! Fugit enim, cumque sit voluptatem dignissimos aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nulla porro inventore tenetur odit perferendis illo excepturi magnam voluptate sunt atque minus accusamus ea non architecto sint, laborum cupiditate delectus?</p>
+
+
+</body>
+</html>
